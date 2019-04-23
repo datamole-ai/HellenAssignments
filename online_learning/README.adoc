@@ -1,0 +1,23 @@
+= Online anomaly detection
+
+Implement online anomaly detection algorithm that follows the scikit-learn interface.
+This detector is automatically retrained if a concept drift occurs.
+The concept drift is detected if the distribution of training data and inference data is different.
+To decide whether the distribution has changed, use an appropriate statistical test.
+
+== Requirements
+
+* Let user define which base anomaly detector should be used.
+
+* Expect that data for inference will come as a stream of data samples or stream of batches of data samples.
+
+* Each retrained of the model is logged with logging module.
+
+* Write a short test (using pytest or other testing library).
+
+* Document your code.
+
+== Side note
+
+* The implementation requires several other parameters that have to be set. We want to see how will you handle them.
+
